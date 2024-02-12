@@ -29,7 +29,7 @@ body {
   margin: 50px;
 }
 .userInfo {
-  width: 600px;
+  width: 80%;
   text-align: left;
 }
 
@@ -204,52 +204,21 @@ h2 {
   color: #ffffff;
   border-radius: 7px;
 }
-
 @media screen and (max-width: 450px) {
-  .main {
-    display: grid;
-    gap: 1rem;
-    padding: 2rem;
-    grid-template-areas:
-      "header"
-      "content";
-  }
-  .content {
-    display: grid;
-    grid-template-areas:
-      "contentLeft"
-      "contentCenter"
-      "eventIcons ";
-  }
   .header {
-    display: grid;
-    grid-template-areas:
-      "headerLeft"
-      "headerRight";
+    flex-direction: column;
+    height: 700px;
   }
   .headerLeft {
-    display: grid;
-
-    /* justify-content: center; */
-    grid-template-areas:
-      "userimg"
-      "userInfo";
+    flex-direction: column;
   }
   .headerRight {
-    display: grid;
-    grid-template-areas:
-      "userStatistics1"
-      "userStatistics2";
+    flex-direction: column;
   }
-  .contentLeft {
-    position: relative;
-    top: 450px;
+  .userStatistics2 {
+    margin-left: 150px;
   }
-  .contentRight {
-    gap: 1rem;
-  }
-  .contentCenter {
-    position: relative;
-    top: 800px;
+  .content {
+    flex-direction: column;
   }
 }
